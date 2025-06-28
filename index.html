@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style .css">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Made By: M.Hassan</h2>
+<br>
+<h3>Rollno. 00352</h3>
+    <script>
+//Q1 age group identifier
+let age = prompt("What is your age?");
+if(isNaN(age)){
+    alert("Error!");
+}
+else if(age<0){
+    alert("Please enter Positive value!");
+}
+else if(age<=12){
+    alert("You are a child!");
+}
+else if(age<=19){
+    alert("You are a Teenager!");
+}
+else if(age<=59){
+    alert("You are an Adult!");
+}
+else if(age>59){
+    alert("You are a Senior citizen!");
+}
+
+// Q2 odd or even identifier
+let oddEven = prompt("Enter a number...");
+if(oddEven % 2===0){
+    alert("Your number is an even number!");
+}
+else{
+    alert("Your number is an odd number!");
+}
+
+// Q3 positive, negative, and zero identifier
+let negPos = prompt("Enter any number of your choice...");
+if(negPos>0){
+    alert("Your number is a positive number!");
+}
+else if(negPos<0){
+    alert("Your number is a negative number!");
+}
+else if(negPos==0){
+    alert("Your number is zero.");  
+}
+
+//Q4 vowels and cosonents
+let vowels = prompt("Enter any Alphabet...")
+if(vowels=="a" || vowels =="A"){
+      alert("Its a vowel!")
+}
+else if(vowels=="e" || vowels =="E"){
+      alert("Its a vowel!")
+}
+else if(vowels=="i" || vowels =="I"){
+      alert("Its a vowel!")
+}
+else if(vowels=="o" || vowels =="O"){
+      alert("Its a vowel!")
+}
+else if(vowels=="u" || vowels =="U"){
+      alert("Its a vowel!")
+}else{
+    alert("This is a consonent!")
+}
+
+// Q5 Number operators
+  let num1 = +prompt('Enter your first number...');
+    let num2 = +prompt('Enter your second number...');
+    let operator = prompt('Enter an operator (+, -, *, /)');
+
+    if (operator === '+') {
+        alert(num1 + num2);
+    }
+   else if (operator === '-') {
+        alert(num1 - num2);
+    }
+    else if (operator === '*') {
+        alert(num1 * num2);
+    }
+    else if (operator === '/') {
+        alert(num1 / num2);
+    }
+
+//Q6 Year checker
+let year1 = prompt("Enter any year here...");
+
+if (year1 % 4===0,year1 % 100>0) {
+    alert("This is a leap year!");
+}
+else if (year1 % 400===0) {
+    alert("This is a leap Year");
+}
+else{
+    alert("This is a normal year");
+}
+       
+// Q7 Temperature checker
+let temp = prompt("Enter the temperature in your city...");
+if (temp>=30){
+    alert("It's Hot!");
+}
+else if (temp<=29 && temp>=20) {
+    alert("It's Warm!");
+}
+else if (temp<=19 && temp>=10) {
+    alert("It's Cool!");
+}
+else {
+    alert("It's Cold!")
+}
+
+//Q8 Grade Calculator
+let grade = prompt("Enter your marks...")
+if (grade>100) {
+    alert("Your marks are out of the range!")
+}
+else if (grade<0) {
+    alert("Please enter positive marks!")
+}
+else if (isNaN(grade)) {
+    alert("Error! Please enter a valid value!")
+}
+else if (grade<=100 && grade>=90) {
+    alert("You got A grade!")
+}
+else if (grade<=89 && grade>=80) {
+    alert("You got B grade!")
+}
+else if (grade<=79 && grade>=70) {
+    alert("You got C grade!")
+}
+else if (grade<=69 && grade>=60) {
+    alert("You got D grade!")
+}
+else if (grade<=59 && grade>=50) {
+    alert("You got E grade!")
+}
+else if (grade<=49 && grade>=0) {
+    alert("You are Failed!")
+}
+
+// Q9 Smaller or Larger
+let first = prompt("Enter you first number.")
+let second = prompt("Enter your second number.")
+let third = prompt("Enter your third number.")
+if (first>second && first>third) {
+    alert("Your first number is the largest.")
+}
+else if (second>first && second>third) {
+    alert("Your second number is the largest.")
+}
+else if (third>first && third>second) {
+    alert("Your third number is the largest.")
+}
+else {
+    alert("Your all numbers are equal.")
+}
+
+// Q10 Login system
+let username = prompt("Enter your user name.")
+let password = prompt("Enter your password")
+
+if (username === "" || password === ""){
+    alert("Please fill all the details!")
+} else if (username === "admin" && password === "12345"){
+    alert("Login has been successful!")
+} else {
+    alert("Incorrect Credentials!")
+}
+</script>
+</body>
+</html>
